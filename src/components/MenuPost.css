@@ -1,0 +1,63 @@
+.postMenuIc {
+  font-weight: 600;
+  font-size: 3.5vh;
+  color: var(--blaclk);
+  cursor: pointer;
+  z-index: 5;
+  margin-left: 3vh;
+}
+.postMenuIc:hover {
+  color: var(--primaryTextColor);
+}
+.menuDiv {
+  width: fit-content !important;
+  z-index: 1;
+  border-radius: 1vh !important;
+  display: flex !important;
+  background-color: var(--bodyColor);
+  height: fit-content !important;
+  position: absolute;
+  overflow: hidden;
+  padding: 0 !important;
+}
+.admMenus {
+  color: var(--blaclk);
+  list-style: none;
+  width: 100%;
+  display: flex !important;
+  justify-content: center;
+  align-items: center;
+}
+.warnind-wra {
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  margin-top: -20vh;
+  bottom: 0;
+  z-index: 2;
+  border: 1px solid red !important;
+}
+.admMenus > li {
+  display: flex !important;
+  padding: 1vh 2vh;
+  cursor: pointer;
+  margin: 0;
+  user-select: none;
+  font-weight: 600;
+  font-size: 2vh;
+  justify-content: center;
+  transition: 0.3s ease-in-out;
+  align-items: center;
+}
+.admMenus > li:hover {
+  transition: 0.3s ease-in-out;
+  background-color: var(--boColor);
+}
+.admMenus > li:hover > .menusIC {
+  transition: 0.3s ease-in-out;
+  color: var(--red);
+}
+.menusIC {
+  margin-right: 1vh;
+}

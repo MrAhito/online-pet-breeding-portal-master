@@ -1,0 +1,286 @@
+.UProf-wrapper {
+  background-color: var(--white);
+  width: 90vw;
+  border-radius: 1.5vh;
+  display: flex;
+  height: max-content;
+  margin: auto;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.addpost-warper {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+}
+.addpost-warper > div {
+  margin: 0 2vh;
+  width: 100%;
+}
+.tProp,
+.bProp {
+  display: flex;
+  width: 95%;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.covDiv {
+  display: flex;
+  width: 95%;
+}
+.covUser {
+  height: 40vh;
+  width: 100%;
+  border-radius: 0 0 5vh 5vh;
+  object-fit: cover;
+}
+.reportA {
+  cursor: pointer;
+  font-size: 2vh;
+}
+.reportA:hover {
+  text-decoration: underline;
+}
+.dpUser {
+  width: 27vh;
+  height: 27vh;
+  border: 0.25vh solid var(--borderColor);
+  filter: drop-shadow(0.75vh 0.75vh 0.75vh var(--borderColor));
+  border-radius: 50%;
+  display: flex;
+  cursor: pointer;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--bodyColor);
+  margin-top: -18vh;
+}
+.dpImg {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  display: flex;
+  font-weight: 600;
+  color: var(--white);
+  font-style: 10vh;
+  justify-content: center;
+  align-items: center;
+  object-fit: cover;
+  transition: all 350ms ease-in-out;
+}
+
+.post-warper {
+  padding-left: 2vh;
+}
+.UAddIMG {
+  background-color: var(--bodyColor);
+  font-size: 4vh;
+  position: absolute;
+  margin: 17.5vh 0 0 9vw;
+  padding: 1vh;
+  filter: saturate(1.2);
+  color: var(--primaryColor);
+  border-radius: 50%;
+  border: 0.28vh solid var(--primaryTextColor);
+  transition: all 350ms ease-in-out;
+}
+.dpImg:hover,
+.UAddIMG:hover {
+  filter: contrast(0.8);
+  transition: all 350ms ease-in-out;
+}
+
+.UName {
+  display: flex;
+  text-transform: capitalize;
+  margin: 0.5vh auto;
+  flex-direction: column;
+  width: max-content;
+  font-size: 2.2vh;
+  text-align: center;
+  margin-bottom: 2vh;
+}
+.UName > span {
+  font-size: 5vh;
+  margin-bottom: -1vh;
+  font-weight: 600;
+}
+.bProp {
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+.Uright,
+.Uleft {
+  width: 40%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.Uright {
+  width: 60%;
+  align-items: center;
+}
+.userStat {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  width: 30vw;
+}
+.userStat span {
+  display: flex;
+  flex-direction: column;
+  font-size: 2vh;
+  align-items: center;
+  justify-content: center;
+  font-weight: 600;
+}
+.userStat span p {
+  font-size: 3vh;
+}
+.userInf,
+.petInf {
+  margin: 0.5vh 2vw 0.5vh 0;
+  max-height: 50vh;
+  scroll-behavior: smooth;
+  overflow: auto;
+  user-select: none;
+  padding: 0.5vh 2vw;
+  color: var(--primaryColor);
+  display: flex;
+  flex-direction: column;
+}
+.userInf > span {
+  margin: 0.75vh 0;
+  font-size: 3.5vh;
+  display: flex;
+  align-items: center;
+}
+.userInf > span > p {
+  font-size: 2vh;
+  font-weight: 600;
+  margin-left: 0.7vw;
+  color: var(--blaclk);
+}
+.Ustle {
+  font-size: 3vh;
+  padding: 0 1vw;
+}
+.petInf > .log-in {
+  padding: 0.75vh 0.75vw;
+  display: flex;
+  border-radius: 1vh;
+  flex-direction: row;
+  justify-content: flex-start;
+  margin: 0 auto 0.5vw auto;
+  cursor: pointer;
+  align-items: center;
+}
+.petInf > .log-in > .img {
+  width: 2.5vw;
+  display: flex;
+  border: 0.6vh dotted var(--blaclk);
+  justify-content: center;
+  align-items: center;
+  background-color: var(--primaryColor);
+  text-transform: uppercase;
+  color: var(--white);
+  font-size: 3.5vh;
+  border-radius: 50%;
+  height: 2.5vw;
+}
+.petInf > .log-in > span {
+  display: flex;
+  color: var(--blaclk);
+  flex-direction: column;
+  justify-content: center;
+  margin: 0 0.5vw;
+}
+.petInf {
+  font-size: 2.3vh;
+  font-weight: 600;
+  padding: 0;
+}
+.petBadg {
+  color: var(--primaryColor);
+  font-size: 2.25vh;
+  margin: 0 0.1vw;
+}
+.suggestionDiv {
+  border: 1px solid var(--blaclk);
+  display: flex;
+  flex-direction: column;
+  top: 74.5vh;
+  z-index: 10;
+  width: 92vh;
+  border-radius: 1vh;
+  list-style: none;
+  background-color: var(--bodyColor);
+  position: absolute;
+}
+.suggestionDiv > li {
+  cursor: pointer;
+  text-align: start;
+  padding: 1vh;
+}
+.suggestionDiv > li:hover {
+  background-color: var(--primaryColor);
+}
+.pertA {
+  padding: 0.15vh;
+  border: 0.35vh solid var(--blaclk) !important;
+  border-radius: 50%;
+  width: 6vh;
+  height: 6vh;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  font-size: 5vh;
+}
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+  .petInf {
+    width: 100%;
+  }
+  .petInf > .log-in {
+    border-top: 0.15vh solid var(--borderColor);
+    border-bottom: 0.15vh solid var(--borderColor);
+    width: 90% !important;
+    margin-bottom: -0.15vh;
+  }
+  .bProp {
+    flex-direction: column;
+  }
+  .Uright,
+  .Uleft {
+    width: 100%;
+  }
+  .post-warper {
+    padding: 0;
+    width: 100%;
+    margin: 0 !important;
+  }
+  .UProf-wrapper {
+    width: 100%;
+  }
+  .addpost-warper {
+    width: 100%;
+  }
+  .addpost-warper > div {
+    margin: 0;
+  }
+  .UAddIMG {
+    font-size: 3vh;
+    margin: 21vh 0 0 30vw;
+  }
+}
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (max-width: 768px) {
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (max-width: 992px) {
+}

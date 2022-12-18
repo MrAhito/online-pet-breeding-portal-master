@@ -1,0 +1,344 @@
+#postD {
+  margin: 3vh 0 auto 0;
+  overflow: hidden;
+  width: 90%;
+}
+#posIM {
+  background-color: var(--white);
+  left: 5vw;
+}
+.topPost {
+  margin-top: -2vh;
+  align-items: baseline;
+  width: 99%;
+  justify-content: space-between;
+  display: flex;
+}
+.topPost span p {
+  font-weight: 600;
+  margin-left: 0.25vw;
+  font-size: 2.1vh;
+}
+.postImg {
+  margin-top: 1.25vh;
+  font-size: 2vh;
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+}
+.postImg > .dp-wrapper {
+  width: 4.5vh;
+  height: 4vh;
+  font-size: 2.5;
+}
+.postName {
+  text-transform: capitalize;
+  display: flex;
+  margin: auto 0.5vh;
+  font-weight: 600 !important;
+  justify-content: center;
+  flex-direction: row;
+  align-items: center;
+}
+.posterTyped {
+  margin: auto 1vh;
+  text-transform: capitalize;
+  border-radius: 4vh;
+  display: flex;
+  font-size: 1.55vh !important;
+  padding: 0.15vh 1vh;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+.peto {
+  background-color: var(--primaryColor);
+  color: var(--blaclk);
+}
+.petb {
+  color: var(--primaryColor);
+  background-color: var(--blaclk);
+}
+
+.peta {
+  color: var(--primaryColor);
+  border: 0.25vh solid var(--primaryColor);
+}
+.vet {
+  color: var(--blaclk);
+  background-color: var(--green);
+}
+.topPost span,
+.topPost p {
+  display: flex;
+  align-items: center;
+  font-size: 1.8vh;
+  font-weight: 100;
+}
+.topPost p {
+  margin-right: 0.5vw;
+}
+.postBtns {
+  display: flex;
+  align-items: center;
+  width: auto;
+  justify-content: center;
+  border-top: 0.25vh solid var(--borderColor);
+  border-bottom: 0.25vh solid var(--borderColor);
+  margin-bottom: 1vh;
+}
+.likeb,
+.commb {
+  border: none;
+  outline: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  padding: 1vh;
+  margin: 0.5vh 3.5vh;
+  font-size: 2.5vh;
+  border-radius: 1vh;
+  background-color: var(--white);
+  transition: all 350ms ease-in-out;
+  width: 50%;
+}
+.ptBtnIC {
+  margin-right: 0.5vw;
+  font-size: 2.75vh;
+}
+.on {
+  color: var(--primaryColor);
+  font-weight: 600;
+}
+.likeb:hover,
+.commb:hover {
+  filter: saturate(1.5);
+  background-color: rgba(216, 213, 213, 0.3);
+  transition: all 350ms ease-in-out;
+}
+.postat {
+  font-size: 2.25vh;
+  margin: -0.5vh 0 0.5vh 0;
+  align-items: center;
+  display: flex;
+}
+.postat > span {
+  margin: auto 0.25vh;
+  align-items: center;
+  display: flex;
+}
+.statIC {
+  font-size: 2.25vh;
+  align-items: center;
+  display: flex;
+  padding: 0.25vh;
+  background-color: var(--primaryColor);
+  border-radius: 50%;
+  color: var(--blaclk);
+  border: 0.25vh solid var(--blaclk);
+}
+.comment-f {
+  margin: 1vh 0;
+  display: flex;
+  align-items: center;
+}
+.comment-f > span {
+  margin: 0 0.5vh 0 0;
+}
+#comment-input {
+  border: none;
+  background-color: var(--boColor);
+  font-size: 1.85vh;
+  width: 100%;
+  border-radius: 2vh;
+  padding: 1.25vh 2vh;
+  filter: brightness(1);
+  transition: all 350ms ease-in-out;
+}
+.sendComment:hover {
+  filter: brightness(0.92);
+  transition: all 350ms ease-in-out;
+}
+.sendComment {
+  text-align: center;
+  background-color: var(--primaryColor);
+  font-size: 5vh;
+  color: var(--blaclk);
+  cursor: pointer;
+  margin: auto 1vh;
+  width: fit-content;
+  padding: 0.3vh;
+  height: fit-content;
+  border-radius: 50%;
+}
+.postC {
+  width: 100%;
+  display: flex;
+  border-radius: 0.5vh;
+  align-items: center;
+  background-color: var(--boColor);
+  height: fit-content;
+  margin: 2vh auto;
+  filter: brightness(1.02);
+  overflow: hidden;
+  font-size: 2.1vh;
+}
+.postC img {
+  object-fit: contain;
+  height: 50vh;
+  width: 100%;
+  width: inherit;
+  cursor: pointer;
+  background-position: center;
+  background-repeat: space;
+}
+.commentsasd {
+  zoom: 0.8;
+  color: var(--blaclk);
+  font-size: 1.75vh;
+  display: flex !important;
+  align-items: center !important;
+  flex-direction: row !important;
+}
+.commentsasd > .msgBubble.sent {
+  font-size: 2.5vh;
+}
+.NoPost {
+  font-size: 2.5vh;
+  margin: 20vh auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.postC span {
+  text-align: justify;
+  line-height: 2 5vh;
+  margin: 1vw 0.75vw;
+}
+.fullPost {
+  display: flex;
+  height: fit-content;
+  max-height: 100vh;
+  width: inherit;
+  flex-direction: column;
+}
+.fullPost > span {
+  text-align: justify;
+  line-height: 2 5vh;
+  margin: 1vw 0.75vw;
+  height: 15%;
+}
+.fullPost > .imgSpan {
+  height: fit-content;
+  max-height: 90vh;
+}
+.fullPost > .imgSpan > img {
+  object-fit: contain;
+  cursor: pointer;
+  width: 100%;
+  height: 100%;
+}
+.post-comment {
+  width: 100%;
+  border: 0.24vh solid var(-borderColor);
+  height: fit-content;
+  max-height: 40vh;
+}
+.comCView {
+  width: 100%;
+  display: flex;
+  font-size: 2vh;
+  margin: 1vh 0 0 0;
+  flex-direction: row-reverse;
+  cursor: pointer;
+}
+.comCView:hover {
+  text-decoration: underline;
+}
+.enad {
+  display: flex;
+}
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+  #postD {
+    border-radius: 0;
+    border-top: 0.15vh solid var(--borderColor);
+    border-bottom: 0.15vh solid var(--borderColor);
+    padding: 0;
+    width: 100% !important;
+  }
+  .topPost {
+    padding: 0 1vh 1vh 1vh !important;
+  }
+  .postat {
+    padding: 0 1vh 1vh 1vh !important;
+  }
+}
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (max-width: 768px) {
+  #postD {
+    width: 100%;
+    margin: 5vh 0 0 0;
+  }
+  #posIM {
+    height: 5vh;
+    margin: 0;
+    margin-left: -5vw;
+    padding: 0;
+  }
+  .topPost {
+    justify-content: flex-start;
+    padding: 2vw;
+  }
+  .topPost p {
+    display: none;
+  }
+  .topPost span p {
+    display: flex;
+    margin: auto 1vw auto 5.75vw;
+    align-items: center;
+    font-size: 2.2vh;
+  }
+  .postC {
+    max-height: max-content;
+    margin: 0 auto;
+  }
+  .fullPost {
+    flex-direction: column-reverse;
+  }
+  .postC .fullPost span {
+    padding: 1vh;
+  }
+  .postC .fullPost img {
+    max-width: 100%;
+  }
+  .postC span {
+    padding: 1vh;
+    font-size: 2vh;
+  }
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (max-width: 992px) {
+  #postD {
+    width: 89%;
+  }
+  .postBtns {
+    width: 100%;
+  }
+  .topPost,
+  #posIM {
+    position: relative;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-items: baseline;
+  }
+  #posIM {
+    margin-left: -5vw;
+  }
+  .postat {
+    margin-top: 1vh;
+  }
+}

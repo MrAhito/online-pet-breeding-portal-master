@@ -1,0 +1,47 @@
+.warning-wraper{
+    background-color: rgba(197, 197, 197, 0.707);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    z-index: 6;
+}
+.warning-div{
+    background-color: var(--bodyColor);
+    width: 40vw;
+    padding:1vh;
+    border-radius: 1vh;
+    height: fit-content;
+}
+.warning-div h1{
+    padding:1vh 0 0 1vh;
+    font-size: 3.75vh;
+    color: var(--primaryColor);
+}
+.warning-div h3{
+    padding: 0 1vh;
+    color: var(--blaclk);
+    font-size: 2.5vh;
+
+}
+
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+.warning-div{
+    width: 90%;
+    }
+}
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (max-width: 768px) {
+
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (max-width: 992px) {
+
+}

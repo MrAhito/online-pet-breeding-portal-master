@@ -1,0 +1,247 @@
+.WelcomeWrap {
+  width: 100vw;
+  height: 99vh;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+.wcBG {
+  object-fit: contain;
+  height: 100%;
+  width: 100%;
+  z-index: -5;
+  position: absolute;
+  filter: drop-shadow(0.025vh 0.025vh 0.025vh var(--primaryTextColor));
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  max-height: 99vh;
+}
+.wcTxt {
+  position: absolute;
+  max-height: 15vh;
+  top: 5vh;
+  width: 100%;
+}
+.WelcomeWrap > h1 {
+  color: var(--primaryTextColor2);
+  font-size: 9vh;
+  margin: -25vh auto -2vh auto;
+}
+.WelcomeWrap > h2 {
+  position: absolute;
+  font-size: 2.7vh;
+  color: var(--primaryTextColor2);
+  bottom: 2vh;
+}
+.WelcomeWrap > h3 {
+  color: var(--primaryColor);
+  font-size: 2.5vh;
+  margin-bottom: 2vh;
+  text-transform: capitalize;
+}
+.WelcomeWrap > button {
+  position: absolute;
+  bottom: 12vh;
+  width: 22vw;
+}
+.petREgDiv {
+  margin: 2vh auto -13.25vh auto;
+  display: grid;
+  width: 37vw;
+  grid-template-columns: repeat(5, 1fr);
+  row-gap: 2.5vh;
+  column-gap: 2.5vh;
+}
+.newDatePick2{
+  border-radius:.75vh;
+  padding: 2.35vh 3vh;
+  border: .25vh solid var(--borderColor);
+}
+.sad{
+  border: .25vh solid var(--blaclk);
+}
+.petBadge {
+  color: #fff;
+  border: 0.35vw double var(--primaryTextColor2);
+  border-radius: 50%;
+  height: 5vw;
+  user-select: none;
+  margin: auto;
+  overflow: hidden;
+  color: var(--primaryColor);
+  width: 5vw;
+  display: flex;
+  transition: 350ms ease-in-out;
+  justify-content: center;
+  cursor: pointer;
+  align-items: center;
+}
+.defICon {
+  margin: 0;
+  width: 100%;
+  position: relative;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 600;
+  font-size: 5.5vh;
+}
+.defAICon {
+  font-size: 2.5vw;
+  color: #fff;
+  margin-top: 0.75vw;
+  position: absolute;
+}
+.petBadge:hover {
+  color: var(--primaryTextColor2);
+  transition: 350ms ease-in-out;
+}
+.petBadge span {
+  position: absolute;
+  margin-bottom: -15vh;
+  max-width: 6vw;
+  overflow: hidden;
+}
+.showForm {
+  z-index: 5;
+  display: flex;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  justify-content: center;
+  align-items: center;
+  top: 0;
+}
+.hideForm {
+  background-color: var(--white);
+  position: absolute;
+  border-radius: 50%;
+  width: 5.25vh;
+  height: 5.25vh;
+  right: 22.8vw;
+  top: 20vh;
+  z-index: 6;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: 350ms ease-in-out;
+  font-size: 5.5vh;
+  cursor: pointer;
+}
+.hideForm:hover {
+  color: var(--primaryTextColor);
+  transition: 350ms ease-in-out;
+}
+.petForm {
+  display: flex;
+  position: relative;
+  z-index: 5;
+  flex-direction: column;
+  box-shadow: 0.5vw 0.5vw 0.5vw var(--borderColor);
+  display: flex;
+  padding: 5vh 5vh 0 5vh;
+  flex-direction: column;
+  justify-content: center;
+  background-color: var(--white);
+  border: 0.15vh solid var(--borderColor);
+  border-radius: 1.5vh;
+}
+.dotsa {
+  border: 0.6vh double var(--primaryTextColor2);
+  position: absolute;
+  display: flex;
+  width: 2.75vh;
+  border-radius: 50%;
+  height: 2.75vh;
+  right: 1.75vw;
+  top: 10.5vh;
+}
+.dotsa div {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+}
+.guestProlouge {
+  font-size: 2.5vh;
+}
+.btn-log {
+  height: 3.5vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.filer {
+  border: none;
+  cursor: pointer;
+  margin: 2vh auto -2vh auto;
+  border-bottom: 0.35vh solid var(--primaryTextColor);
+}
+.filer:hover {
+  border: none;
+  border-bottom: 0.35vh solid var(--primaryTextColor);
+}
+.sendFile {
+  position: absolute;
+  margin-top: 6vw;
+  font-size: 8vh;
+  cursor: pointer;
+  color: var(--primaryTextColor2);
+  border-radius: 50%;
+  padding: 1vh;
+  transition: 350ms ease-in-out;
+  color: var(--primaryTextColor);
+  border: 1vh double var(--primaryTextColor);
+}
+.sendFile:hover {
+  border: 1vh double var(--primaryTextColor2);
+  color: var(--primaryTextColor2);
+  transition: 350ms ease-in-out;
+}
+
+.btnAddPEts{
+  display: flex;
+  margin-top: -5vh;
+  flex-direction: row;
+  width: 100%;
+}
+.btnAddPEts > button{
+  width: 40% !important;
+}
+.cae{
+  border-color: black;
+  background-color: var(--blaclk);
+}
+.cae:hover{
+  border-color: black;
+  background-color: var(--blaclk);
+}
+@media only screen and (max-width: 600px) {
+  .newDatePick2{
+  font-size: 2vh;
+  user-select: none;
+  cursor: text;
+  border-radius:.75vh;
+  border: .25vh solid var(--borderColor);
+}
+.dotsa{
+  margin: .65vh .25vh 0 0 ;
+  width: 1.75vh;
+  height: 1.75vh;
+}
+
+.btnAddPEts{
+  flex-direction: column;
+}
+.btnAddPEts > button{
+  font-size: 2vh;
+  width: 90% !important;
+  margin-top: 4vh;
+  height: 3vh;
+  margin-bottom: -2.5vh;
+}
+}

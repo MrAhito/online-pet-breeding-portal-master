@@ -1,0 +1,227 @@
+.log-wrapper {
+  width: 85%;
+  max-width: 650px;
+  height: 85%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.log-in,
+.regForm {
+  border: 0.15vh solid var(--borderColor);
+  border-radius: 1.5vh;
+  width: 80%;
+  box-shadow: 0.5vw 0.5vw 0.5vw var(--borderColor);
+  display: flex;
+  padding: 3vh;
+  flex-direction: column;
+  justify-content: center;
+  background-color: var(--white);
+}
+.field {
+  display: flex;
+  height: 7.5vh;
+  margin: auto;
+  width: 100%;
+  flex-flow: column-reverse;
+}
+label,
+input {
+  display: flex;
+  flex-direction: row;
+  background-color: var(--white);
+  font-size: 2.25vh;
+  transition: all 0.2s;
+  touch-action: manipulation;
+}
+
+.login {
+  font-size: 2.25vh;
+  border: 0.2vh solid var(--borderColor);
+  font-family: inherit;
+  -webkit-appearance: none;
+  border-radius: 1vh;
+  padding: 1vh 2vh;
+  cursor: text;
+}
+.login:focus {
+  border: 0.2vh solid var(--primaryColor);
+  outline: 0;
+}
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus,
+input:-webkit-autofill:active {
+  -webkit-box-shadow: 0 0 0 30px var(--white) inset !important;
+}
+
+.label-log {
+  padding: 0 1vh;
+  margin: 0.5vh 0 0 1.5vh;
+  user-select: none;
+  pointer-events: none;
+  width: 80% !important;
+  color: gray;
+  background-clip: padding-box;
+}
+.login:placeholder-shown + label {
+  cursor: text;
+  padding: 0 1vh;
+  width: fit-content;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  transform-origin: left bottom;
+  transform: translate(0, 4.15vh) scale(0.9);
+}
+.login::-webkit-input-placeholder {
+  opacity: 0;
+  transition: inherit;
+  margin: 0.5vh 0 0 1.5vh;
+  color: gray;
+  user-select: none;
+  background-color: var(--white);
+}
+.login:focus::-webkit-input-placeholder {
+  opacity: 1;
+}
+.login:not(:placeholder-shown) + label > p,
+.login:focus + label > p {
+  display: none;
+}
+.login:not(:placeholder-shown) + label,
+.login:focus + label {
+  transform: translate(0vh, 1.5vh) scale(0.9);
+  font-size: 2.05vh;
+  width: fit-content !important;
+  font-weight: 600;
+  cursor: pointer;
+  color: var(--primaryColor);
+}
+
+.login:not(:placeholder-shown),
+.gendAct,
+.sltreg,
+select:hover {
+  border: 0.2vh solid var(--blaclk);
+}
+button {
+  outline: none;
+  font-size: 3vh;
+}
+.btn-log {
+  font-size: 3vh;
+  user-select: none;
+  font-family: inherit;
+  border: 0.3vh solid var(--primaryColor);
+  border-radius: 1vh;
+  background-color: var(--primaryColor);
+  color: var(--white);
+  margin: 2vh auto;
+  width: 93%;
+  font-weight: 1000;
+  padding: 0.75vh 2vh;
+  cursor: pointer;
+  transition: all 350ms ease-in-out;
+}
+.btn-log:hover,
+.btn_disabled {
+  background-color: var(--primaryColor);
+  filter: brightness(0.89);
+  border: 0.3vh solid hsl(32, 93%, 45%);
+  transition: all 350ms ease-in-out;
+}
+.btn_disabled {
+  pointer-events: none;
+}
+.reg {
+  margin: auto;
+  font-size: 2.25vh;
+  width: max-content;
+}
+.wraper {
+  display: flex;
+  margin: 2vh 1vh;
+  justify-content: space-between;
+}
+.shp {
+  width: 2vh;
+  margin-right: 1vh;
+  height: 2vh;
+  font-size: 2vh;
+}
+.labp {
+  display: flex;
+  align-items: center;
+  transition: all 350ms ease-in-out;
+  font-size: 2vh;
+}
+.ffp {
+  font-size: 2vh;
+}
+.labp:hover,
+.ffp:hover {
+  cursor: pointer;
+  color: var(--primaryColor);
+  transition: all 350ms ease-in-out;
+}
+.reg-link {
+  margin: 0 .5vh;
+  font-weight: 600;
+  transition: all 340ms ease-in-out;
+}
+.reg-link:hover {
+  color: var(--primaryColor);
+  transition: all 340ms ease-in-out;
+}
+.b-log {
+  width: 100vw;
+  border: 1px solid red;
+  height: 100vh;
+}
+
+.errorLoginMessage{
+  display: flex;
+  align-items: center;
+  font-size: 2vh;
+  color: var(--red);
+  padding:.75vh;
+  margin: 1.25vh 0vh;
+  background-color: rgba(255, 0, 0, 0.2);
+  font-weight: 600;
+  border-top:.25vh solid var(--red);
+  justify-content: center;
+  border-bottom: .25vh solid var(--red);
+}
+.guestLogin{
+  display: flex;
+  width: 100%;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  border-top: .25vh solid var(--borderColor);
+}
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+  .log-wrapper {
+    width: 90%;
+    margin-top: -10vh
+    ;
+    height: fit-content;
+  }
+  .log-in {
+    background: none;
+    box-shadow: none;
+    border: none;
+    width: 100% !important;
+  }
+  .btn-log{
+    width: 90%;
+  }
+  select,
+input {
+  font-size: 2vh !important;
+}
+  
+}

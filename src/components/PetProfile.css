@@ -1,0 +1,368 @@
+.pet-profile {
+  overflow: auto;
+  z-index: 1;
+}
+.pet-profile-top {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+.pet-profile-wrapper {
+  display: flex;
+  align-items: center;
+}
+.pet-profile-img {
+  border: 1vh double var(--bodyColor);
+  width: 18vh;
+  user-select: none;
+  background-color: var(--primaryTextColor);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 600;
+  font-size: 13vh;
+  margin: 0 2vh;
+  color: var(--white);
+  border-radius: 50%;
+  height: 18vh;
+}
+.pet-div {
+  border-top: 0.25vh solid var(--borderColor);
+  margin: 1.5vh 0;
+  padding: 0;
+}
+.pet-desc {
+  display: flex;
+  height: fit-content;
+  flex-direction: column;
+}
+.pet-name {
+  font-size: 5.5vh;
+  color: var(--primaryTextColor);
+  text-decoration: none;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.5s ease-in-out;
+}
+.pet-name.desc {
+  margin-top: -1.5vh;
+  font-weight: 400;
+  font-size: 2.5vh;
+  color: var(--blaclk);
+  text-align: center;
+}
+.name:hover {
+  text-decoration: underline;
+  transition: all 0.5s ease-in-out;
+}
+.petLikes {
+  display: flex;
+  align-items: center;
+  font-size: 3.5vh;
+  width: 40%;
+  font-weight: 600;
+}
+.petLikes-icon {
+  cursor: pointer;
+  color: blue;
+  font-size: 7vh;
+}
+.fades {
+  filter: saturate(0.5);
+}
+.pet-profile-bottom {
+  display: flex;
+}
+.defa {
+  height: 20vh !important;
+}
+.pet-Pbottom-col {
+  width: 33.333%;
+  padding: 0 1.5vh;
+  font-weight: 600;
+  height: 48.7vh;
+  border-left: 0.25vh solid var(--borderColor);
+  border-right: 0.25vh solid var(--borderColor);
+  color: var(--blaclk);
+}
+.pet-Pbot-col-header {
+  width: 100%;
+  text-align: center;
+  font-size: 2.75vh;
+  margin-bottom: 1.5vh;
+}
+.col-head-span {
+  cursor: pointer;
+  display: flex;
+  margin: 1vh 0;
+  align-items: center;
+  color: var(--primaryTextColor);
+
+  font-size: 2.25vh;
+}
+.col-head-ic {
+  font-size: 2.75vh;
+}
+.med {
+  border-radius: 0.85vh;
+  margin: auto 0.5vh auto 0;
+  border: 0.35vh solid var(--blaclk);
+}
+.col-head-span > a {
+  font-weight: 400;
+  color: var(--blaclk);
+  font-size: 1.75vh;
+  margin: auto 1vh;
+}
+.pet-Pbot-col-Feed {
+  width: 90%;
+  display: flex;
+  height: 100%;
+  margin: 1.5vh auto;
+  padding: 0.5vh 1.5vh;
+  align-items: center;
+  border-radius: 1vh;
+  text-align: center;
+  border: 1px solid var(--borderColor);
+}
+.headlType {
+  display: flex;
+  align-items: center;
+}
+.healad {
+  display: flex;
+  justify-content: space-between;
+}
+.noFeed {
+  padding: 2vh;
+  justify-content: center;
+  color: var(--primaryTextColor);
+}
+.col-feed-ic {
+  font-size: 2.75vh;
+  margin: 0 1vh;
+}
+.pet-feed-header {
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+}
+.health-docs-btns {
+  display: flex;
+  flex-direction: row;
+}
+.vieDocs {
+  font-weight: 600;
+  user-select: none;
+  font-size: 3.25vh;
+  font-family: var(--primaryFont);
+  padding: 0.5vh 1vh;
+  margin: auto 0.5vh;
+  border-radius: 1vh;
+  color: var(--bodyColor);
+  background-color: var(--primaryColor);
+  border: 0.35vh solid var(--blaclk);
+  transition: all 350ms ease-in-out;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+.disabled {
+  pointer-events: none;
+  filter: saturate(0.5);
+}
+.vieDocs:hover {
+  color: var(--blaclk);
+  background-color: var(--bodyColor);
+  transition: all 350ms ease-in-out;
+}
+.settingPet {
+  position: absolute;
+  display: flex;
+  right: 12.5vh;
+  width: fit-content;
+  height: fit-content;
+}
+.settingPet > .petLikes-icon {
+  font-size: 3.25vh;
+  border: 0.5vh solid var(--blaclk);
+  color: var(--blaclk);
+  cursor: pointer;
+  padding: 0.35vh;
+  border-radius: 50%;
+  transition: all 0.5s ease-in-out;
+}
+.settingPet > .petLikes-icon:hover {
+  color: var(--primaryTextColor);
+  border-color: var(--primaryTextColor);
+  transition: all 0.5s ease-in-out;
+}
+.settingPet > .petLikes-icon.petred:hover {
+  color: var(--red);
+  border-color: var(--red);
+  transition: all 0.5s ease-in-out;
+}
+.rate-value {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 3.25vh;
+  width: 3.5vh;
+  height: 3.5vh;
+  padding: 0.5vh;
+  font-weight: bold;
+  border-radius: 50%;
+  border: 0.35vh solid var(--primaryTextColor);
+}
+.rating-label {
+  display: flex;
+  background-color: var(--bodyColor);
+  align-items: center;
+  height: 6vh;
+  justify-content: space-evenly;
+  width: 100%;
+}
+
+.rate-data {
+  margin: 3vh auto;
+  width: 100%;
+  font-size: 2vh;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.rate-data b {
+  font-size: 4vh;
+  height: 2.5vh !important;
+  margin: 0;
+  padding: 0;
+  height: fit-content;
+  display: block;
+}
+.rate-data i {
+  font-family: var(--secondaryFont);
+  font-weight: 200;
+  text-align: center;
+}
+.btopqoute {
+  margin: 0 1vh 0 1vh !important;
+}
+.bbotqoute {
+  margin: -2vh 1vh 0 1vh !important;
+}
+.pet-camera {
+  border: 0.5vh solid var(--primaryTextColor);
+  font-size: 3.5vh;
+  padding: 0.5vh;
+  position: absolute;
+  display: flex;
+  color: var(--primaryTextColor);
+  cursor: pointer;
+  margin: 6vh 0 0 16vh;
+  background-color: var(--bodyColor);
+  border-radius: 50%;
+  transition: all 0.35s ease-in-out;
+}
+.pet-camera:hover {
+  color: var(--blaclk);
+  border-color: var(--blaclk);
+  transition: all 0.35s ease-in-out;
+}
+.veirifi {
+  background-color: green;
+}
+.unVerify:hover,
+.wd {
+  color: floralwhite;
+  background-color: firebrick;
+}
+.wd {
+  pointer-events: none;
+}
+.pet-camera-drop {
+  border: 1px solid var(--borderColor);
+  border-radius: 1vh;
+  padding: 0.5vh 1vh;
+  z-index: 3;
+  position: absolute;
+  margin: 28.5vh 0 0 9.5vh;
+  list-style-type: none;
+  background-color: var(--bodyColor);
+}
+.camDropLI {
+  display: flex;
+  margin: 0.25vh 0;
+  align-items: center;
+  cursor: pointer;
+  font-size: 3vh;
+  padding: 0.75vh 2.5vh;
+}
+.camDropLI > span {
+  font-size: 2vh;
+  margin: 0 1vh;
+  font-weight: 600;
+}
+.camDropLI:hover {
+  border-radius: 0.75vh;
+  background-color: #dcdcdc;
+}
+.pet-likeDiv {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 33.3%;
+  justify-content: center;
+}
+.pet-likeSpan {
+  font-size: 2.5vh;
+}
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+  .pet-profile-top {
+    display: flex;
+    flex-direction: column;
+  }
+  .settingPet {
+    margin-top: 1vh;
+    right: 2vh;
+  }
+  .settingPet > .petLikes-icon {
+    border-width: 0.35vh;
+    font-size: 2vh;
+  }
+  .pet-profile-wrapper {
+    padding-top: 1vh;
+    width: fit-content;
+  }
+  .petLikes {
+    margin: auto;
+    width: 90%;
+    font-size: 2.25vh;
+  }
+  .petLikes-icon {
+    font-size: 5vh;
+  }
+  .pet-profile-bottom {
+    flex-direction: column;
+  }
+  .pet-Pbottom-col {
+    border: none;
+    width: 92%;
+    padding: 0 4%;
+    height: fit-content;
+    margin: 0.75vh auto;
+    border-bottom: 0.15vh solid var(--borderColor);
+  }
+  .name {
+    font-size: 3.5vh;
+  }
+}
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (max-width: 768px) {
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (max-width: 992px) {
+}

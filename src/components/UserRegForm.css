@@ -1,0 +1,272 @@
+.regDiv {
+  margin: auto;
+  width: 48vw;
+  zoom: 0.95;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.logHead {
+  margin: 2vh auto;
+  font-size: 8.5vh;
+  margin: auto;
+  text-align: center;
+  background-color: var(--bodyColor);
+}
+.regForm {
+  display: flex;
+  padding: 5vh 5vh 2.5vh 5vh;
+  align-items: center;
+  width:600px;
+  margin: 0;
+}
+.fixwed{
+  width: 91%;
+  margin-left: 0;
+}
+.locat{
+  border: .25vh solid var(--borderColor);
+  position: absolute;
+  display: flex;
+  cursor: pointer;
+  color: var(--blaclk);
+  font-size: 3vh;
+  width: 3%;
+  border-radius: .9vh;
+  justify-content: center;
+  align-items: center;
+  margin-left: 85.5vh;
+  transition: all .3s ease-in-out;
+  height: 5vh;
+}
+.locat:hover{
+  background-color: var(--blaclk);
+  color: var(--primaryColor);
+  border: .25vh solid var(--primaryColor);
+  transition: all .3s ease-in-out;
+}
+.hr {
+  display: flex;
+  padding-bottom: 2vh;
+  margin-bottom: 2vh;
+  border-bottom: 0.35vh solid var(--borderColor);
+}
+.regForm-wrapper {
+  display: grid;
+  width: 100%;
+  justify-content: center;
+  grid-template-columns: repeat(12, 1fr);
+  column-gap: 2.5vh;
+}
+.errorVal {
+  border: 0.22vh solid red;
+}
+.RegImgDiv {
+  margin: 1.5vh auto;
+  width: 100%;
+  user-select: none;
+  cursor: pointer;
+  border-radius: 2vh;
+  background: url("data:image/svg+xml,%3csvg width='100%25' height='100%25' xmlns='http://www.w3.org/2000/svg'%3e%3crect width='100%25' height='100%25' fill='none' stroke='%23D3D3D4FF' stroke-width='6' stroke-dasharray='17%2c 18%2c 7%2c 24' stroke-dashoffset='0' stroke-linecap='butt'/%3e%3c/svg%3e")
+    no-repeat center;
+  background-size: 100%;
+  background-color: #f6f3fb;
+}
+.RegImg_wrapper {
+  background: url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 50 50' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%23f89c36' fill-opacity='0.38'%3E%3Cpath d='M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+  background-size: 7vh;
+  border-radius: 2vh;
+  margin: 0.75vh;
+  opacity: 0.75;
+  height: 28vh;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  font-weight: 600;
+  font-size: 3vh;
+  justify-content: center;
+  transition: all 350ms ease-in-out;
+}
+.RegImg_wrapper:hover {
+  color: var(--primaryColor);
+  transition: all 350ms ease-in-out;
+}
+.col1 {
+  grid-column: 1/13;
+}
+.col2a {
+  grid-column: 1/7;
+}
+.col2b {
+  grid-column: 7/13;
+}
+.col3a {
+  grid-column: 1/5;
+}
+.col3b {
+  grid-column: 5/9;
+}
+.col3c {
+  grid-column: 9/13;
+}
+.coldate {
+  grid-column: 11/13;
+  display: flex;
+  flex-direction: column-reverse;
+  width: max-content;
+}
+.subInfo {
+  font-weight: 400;
+  display: flex;
+  font-size: 1.9vh;
+  width: 99%;
+  margin: 1vh auto;
+}
+.subInfo span {
+  font-size: 1.8vh;
+  font-weight: 600;
+  color: red;
+  margin: auto 0.75vh;
+}
+.newDatePick{
+  border: .25vh solid var(--borderColor);
+  border-radius: 1vh;
+  padding: 0.85vh 2vh;
+}
+.newDatePick:hover{
+  border: .25vh solid var(--blaclk);
+}
+.newDatePick:focus, .dataemp{
+  border: .25vh solid var(--primaryColor);
+}
+select {
+  font-size: 2.25vh;
+  margin: auto 1vh;
+  border: 0.2vh solid var(--borderColor);
+  font-family: inherit;
+  border-radius: 1vh;
+  padding: 0.5vh 1.2vh;
+  user-select: none;
+  cursor: text;
+  background: url("../images/96811.png") no-repeat right var(--white);
+  background-size: 5%;
+  -webkit-appearance: none;
+  background-position-x: 95%;
+}
+.closReg{
+  color: var(--primaryColor);
+  margin: 2vh;
+  z-index: 15;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 600;
+  position: absolute;
+  font-size: 3vh;
+  cursor: pointer;
+  background-color: var(--white);
+  border-radius: 1vh;
+  padding: 1vh;
+  border: .3vh solid var(--primaryColor);
+  transition: all .3s ease-in-out;
+}
+.closReg:hover{
+  background-color: transparent;
+  transition: all .3s ease-in-out;
+}
+.mMapReg{
+  object-fit: contain !important;
+  margin-top: 1vh;
+  position: fixed;
+  top: 6vh;
+  right: 0;
+  bottom: 0;
+  width:100% !important;
+  height: 100vh!important;
+  display: flex !important;
+  justify-content: center;
+  align-items: center;
+}
+.regSlt {
+  padding: 1vh 2vh;
+  margin: 0;
+}
+.regUty {
+  padding: 1vh 2vh;
+}
+.gend {
+  cursor: text;
+  padding: 0 1vh;
+  width: 20vh;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  pointer-events: none; /* let the click pass trough */
+  transform: translate(0, 4vh) scale(0.9);
+  transform-origin: left bottom;
+  transition: all 350ms ease-in-out;
+}
+.gendMove {
+  pointer-events: none; /* let the click pass trough */
+  transform: translate(0, 1.5vh) scale(0.9) !important;
+  font-size: 2.05vh;
+  width: fit-content !important;
+  font-weight: 600;
+  cursor: pointer;
+  color: var(--primaryColor);
+  transition: all 350ms ease-in-out;
+}
+.formHead {
+  justify-content: center;
+  width: 100%;
+  font-size: 3vh;
+  color: var(--primaryTextColor);
+  margin-top: -3vh;
+}
+.guesBtn {
+  display: flex;
+  margin: 1vh 0 -4vh 0;
+  width: 100%;
+}
+.ignFix{
+  display: flex;
+  align-self: center;
+  justify-content: center;
+}
+.btnIDX{
+  width: 100%;
+}
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+.logHead {
+  margin: 1vh;
+  font-size: 8vh;
+}
+.regForm-wrapper {
+  column-gap:1vh;
+}
+.regDiv {
+  width: 90%;
+  overflow: hidden;
+  margin: 0 auto;
+  display: flex;
+  height: 100%; 
+}
+  .regForm{
+  height: 100%; 
+    box-shadow: none;
+    border: none;
+    width: 100%;
+    background: none;
+  }
+  .gendMove{
+    font: 2.05vh;
+  }
+  .label-log{
+    margin: auto;
+  font-size: 2.25vh;
+  }
+}
+

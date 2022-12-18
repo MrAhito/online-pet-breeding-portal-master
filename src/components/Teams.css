@@ -1,0 +1,69 @@
+.teamWrapper {
+  width:100%;
+  height: max-content;
+  background-color: var(--bodyColor);
+  border: 0.1vh solid var(--borderColor);
+  border-radius: 2vh;
+  display: flex;
+  text-align: center;
+  flex-direction: column;
+  cursor: pointer;
+  color: var(--bodyColor);
+  justify-content: center;
+  align-items: center;
+  transition: all 450ms ease-in-out;
+}
+.teamInfo {
+  width: 96%;
+  padding: 1vh;
+  background-color: var(--primaryColor);
+  border-radius: 0 0 2vh 2vh;
+}
+.teamName {
+  text-decoration: underline;
+  font-size: 3.2vh;
+  margin: 1vh auto;
+
+}
+.socmed{
+  font-size:2.5vh;
+  width: 40%;
+  display: flex;
+  margin: 1.5vh auto;
+  align-items: center;
+  justify-content: space-between;
+}
+.teamRole {
+  font-size: 2.5vh;
+}
+.socs{
+  color: var(--white);
+  transition: 0.4s all ease-in-out;
+}
+.socs:hover{
+  transition: 0.4s all ease-in-out;
+  color: var(--blaclk);
+}
+.teamDesc {
+  margin: 3vh auto;
+  font-size: 2vh;
+  font-style: italic;
+}
+.teamWrapper:hover .teamImage,
+.teamWrapper:hover {
+  filter: saturate(1.2);
+  transition: all 450ms ease-in-out;
+  box-shadow: 0.1vh 0.1vh 0.25vw 0.25vw var(--borderColor);
+}
+@media screen and (max-width: 950px) {
+  .teamWrapper {
+    height: 40vh;
+  }
+  .teamInfo {
+    height: 50%;
+    width: 97%;
+  }
+  .teamDesc {
+    margin: 1vw auto;
+  }
+}

@@ -1,0 +1,23 @@
+.Notif_Li{
+    background-color: var(--boColor);
+    border: 0.25vh solid var(--borderColor);
+    width: 98%;
+    cursor: pointer;
+    display: flex;
+    text-decoration: none;
+    border-radius: 1.5vh;
+    flex-direction: row;
+    align-items: flex-start;
+    margin-bottom: .75vh;
+    padding: .5vh .25vh;
+}
+.dataNotif{
+    font-size: 1.8vh;
+    text-align: justify;
+    width: 85%;
+    padding:0 .5vh 0 1vh;
+}
+.unviewed{
+    background-color: var(--borderColor);
+    filter: saturate(.9);
+}

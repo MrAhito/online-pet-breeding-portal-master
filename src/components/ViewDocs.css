@@ -1,0 +1,48 @@
+.view-doc-wrapper{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    top: 7vh;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(255, 255, 255, 0.8);
+    z-index: 2;
+}
+.view-content{
+    display: flex;
+    align-items: center;
+    height:90%;
+    width: 55%;
+    overflow: hidden;
+    border-radius: 2vh;
+    background-color: var(--white);
+    border: .25vh solid var(--borderColor);
+    box-shadow: 5px 5px 5px var(--borderColor);
+    position: absolute;
+    flex-direction:column;
+
+}
+.view-header{
+    display: flex;
+    align-items: center;
+    justify-content:center;
+    width: 100%;
+    padding-top: 1vh;
+    margin-bottom:-1vh;
+    font-size: 4vh;
+    font-weight: 600;
+    color: var(--primaryColor);
+}
+.closeBtn{
+    cursor: pointer;
+    position: absolute;
+    right:  0;
+    font-size: 5vh;
+    transition: all 0.2s ease-in-out;
+    margin-right: 1.5vh;
+}.closeBtn:hover{
+    color: var(--blaclk);
+    transition: all 0.2s ease-in-out;
+}

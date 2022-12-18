@@ -1,0 +1,376 @@
+.NavBar {
+  height: 7.5vh;
+  width: 99.8vw;
+  display: flex;
+  position: sticky;
+  top: 0;
+  user-select: none;
+  justify-content: center;
+  z-index: 10;
+  background-color: var(--bodyColor);
+  border-bottom: 0.25vh solid var(--borderColor);
+  box-shadow: 0.1vw 0.2vw 0.5vw var(--borderColor);
+}
+.nav-wrapper {
+  height: 100%;
+  width: 85vw;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+}
+.logo1,
+.logo2 {
+  height: 6.5vh;
+  width: 22%;
+  cursor: pointer;
+  margin: auto 0;
+}
+.logo2 {
+  display: none;
+  text-align: center;
+  margin: auto;
+}
+
+.logo1 img,
+.logo2 img {
+  height: 100%;
+}
+/* NaVBar For Homepage */
+.menus {
+  display: inline-block;
+  list-style-type: none;
+  font-size: 2.75vh;
+  font-weight: 600;
+}
+.mlist {
+  cursor: pointer;
+  margin: 1.75vh 2vh 0 2vh;
+  display: inline-block;
+}
+.lista {
+  text-transform: none;
+  border-bottom: 0.5vh solid var(--bodyColor);
+  transition: 0.3s ease-in-out;
+  display: inherit;
+  text-decoration: none;
+  color: var(--blaclk);
+}
+.lista:hover,
+.lista:focus {
+  color: var(--primaryColor);
+  border-color: var(--primaryColor);
+  transition: 0.3s ease-in-out;
+}
+.navcheck {
+  display: none;
+}
+
+#checkbox:checked + .menuNav {
+  transform: rotate(-130deg);
+}
+
+.menuNav {
+  display: none;
+  cursor: pointer;
+  font-size: 5.25vh;
+  position: absolute;
+  top: .5vh;
+  right: 1.25vh;
+  transition: 0.25s ease-in-out;
+  transform: rotate(0);
+  color: var(--primaryColor);
+}
+.nav-open {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  padding: 0;
+  top:7.75vh;
+  left: 0;
+  right: 0;
+  width: 100%;
+  border-radius: 0 0 2vh 2vh;
+  background-color: var(--primaryColor);
+}
+.list-open {
+  display: inherit;
+  width: 100%;
+  margin: auto;
+}
+.li-open {
+  color: var(--blaclk);
+  text-decoration: none;
+  display: inherit;
+  padding: 2vh;
+  justify-content: center;
+  border: none;
+  width: 100%;
+  height: 100%;
+  font-size: 3vh;
+  font-weight: 600;
+}
+.li-open:focus,
+.li-open:hover {
+  background-color: sandybrown;
+  border-radius: 0 0 2vh 2vh;
+  color: white;
+}
+.profa{
+  text-decoration: none;
+  font-size: 2.5vh !important;
+  padding: .15vh .5vh !important;
+}
+.porda{
+  width: 4vh;
+  height: 4vh;
+}
+/* NaVBar For Login */
+.Exist {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-evenly;
+}
+.Exist > p {
+  padding-right: 1.5vh;
+  font-size: 2.1vh;
+}
+.Exist > button {
+  width: 10vh;
+  height: 3vh;
+  font-size: 2.5vh;
+  margin-right: 1vh;
+}
+.userBtns,
+.dashBtns {
+  height: 100%;
+  width: 30%;
+    color: var(--blaclk);
+  display: inline-block;
+  list-style-type: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+}
+.dashBtns{
+  transform:translateX(-8.5%);
+}
+.userBtns {
+  width: 22%;
+}
+.dashBtns li a {
+  display: flex;
+  color: var(--primaryColor);
+  justify-content: center;
+  align-items: center;
+}
+.dashBtns li {
+  display: flex;
+  height: 85%;
+  width: 33.3%;
+    cursor: pointer;
+  justify-content: center;
+  font-size: 4vh;
+  align-items: center;
+  padding-top: 1vh;
+  flex-direction: row;
+  transition: all 350ms ease-in-out;
+}
+
+.dashOff:hover {
+  background-color: var(--borderColor);
+  border-bottom: 0.75vh solid var(--primaryColor);
+  transition: all 350ms ease-in-out;
+}
+.dashOn {
+  border-bottom: 0.75vh solid var(--primaryColor);
+  color: var(--primaryColor);
+  transition: all 350ms ease-in-out;
+}
+.dashOff {
+  transition: all 350ms ease-in-out;
+  border-bottom: 0.75vh solid transparent;
+}
+.userBtns > li > a {
+  display: flex;
+  padding: 0.75vh;
+  font-size: 3.5vh;
+  border-radius: 0 0 2vh 2vh;
+  text-align: center;
+  justify-content: center;
+  border: 0.23vh solid var(--borderColor);
+  transition: all 350ms ease-in-out;
+  align-items: center;
+}
+.useT {
+  display: flex;
+  flex-direction: row;
+  cursor: pointer;
+  border: 0.23vh solid var(--primaryColor);
+  align-items: center;
+  justify-content: safe;
+}
+.useT:hover,
+.useT:focus,.useT.on {
+  color: var(--white);
+  filter: brightness(1.12);
+  background-color: var(--borderColor);
+  border: 0.23vh solid var(--blaclk);
+  transition: all 350ms ease-in-out;
+}
+.optUse {
+  display: none;
+}
+.optTitle {
+  display: none;
+}
+.optB {
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 0;
+  z-index: 5;
+  bottom: 0;
+}
+
+  @media screen and (max-width: 600px) {
+  /* .dashBtns .optUse:hover {
+    color: var(--primaryColor);
+    transition: all 350ms ease-in-out;
+  }
+  .dashBtns .optUse {
+    transition: all 350ms ease-in-out;
+    display: block;
+  } */
+  /* .optUse {
+    width: 13vw;
+    display: flex;
+    height: 85%;
+    cursor: pointer;
+    justify-content: center;
+    font-size: 5.54vh;
+    align-items: center;
+    padding-top: 1vh;
+    flex-direction: row;
+    transition: all 350ms ease-in-out;
+  } */
+  /* .optUse:hover {
+    color: var(--primaryColor); */
+    /* transition: all 350ms ease-in-out;
+  } */
+  /* .userBtns {
+    position: absolute;
+    top: 8vh;
+    font-size: 3.5vh;
+    box-shadow: 0.5vw 0.5vw 0.5vw var(--borderColor);
+    width: 20vw;
+    right: 3vh;
+    height: max-content;
+    border: none;
+    display: none;
+    padding: 0;
+    transition: all 350ms ease-in-out;
+    align-items: center;
+  } */
+  /* 
+  .userBtns li a {
+    border-bottom: 0.2vh solid;
+    display: flex;
+    text-align: start;
+    font-size: 4.5vh;
+    border-radius: 0.75vh;
+    text-align: center;
+    justify-content: center;
+    text-decoration: none;
+    width: 90%;
+    background-color: var(--primaryColor);
+  } */
+  /* .optTitle {
+    display: flex;
+    font-size: 2vh;
+  } */
+  /* .userBtns:after {
+    content: " ";
+    position: absolute;
+    right: 9.5vw;
+    top: -1.5vh;
+    border-top: none;
+    border-right: 15px solid transparent;
+    border-left: 15px solid transparent;
+    border-bottom: 15px solid var(--primaryColor);
+  } */
+  
+  .dashBtns {
+    margin: 0;
+  }
+  .dashBtns li {
+    height: 100%;
+    padding: 0  1vh;
+    font-size: 3vh;
+  }
+  .userBtns{
+    margin-right: -2vh;
+  }
+    .userBtns li{
+      padding: 0 !important;
+      width:4vh;
+      margin: 0 !important;
+  }
+.drop{
+  margin-top: -1vh;
+  right: 0 !important;
+  padding: 2% !important;
+  width: 95.75%!important;
+}
+.logo2 img {
+  height: 100%;
+}
+  .logo1 {
+    display: none;
+  }
+  .logo2 {
+    display: flex;
+    height: 5.25vh;
+    margin-left: -2vh;
+  }
+  .userBtns li a {
+    font-size: 3vh;
+  }
+  .porda{
+    margin: .4vh 0;
+    width: 3vh!important;
+    height: 3vh!important;
+  }
+  .menus {
+    position: absolute;
+    transform: translate(0%, -500%);
+    transition: all 750ms ease-in-out;
+    display: flex;
+    flex-direction: column;
+    padding: 0;
+    top: 9.7vh;
+    left: 0;
+    right: 0;
+    width: 100%;
+    border-radius: 0 0 2vh 2vh;
+    background-color: var(--primaryColor);
+  }
+  .userBtns:after {
+    right: 6.5vw;
+  }
+  .menuNav {
+    display: flex;
+  }
+  .Exist{
+    margin-right: -3.25vh;
+  }
+  .Exist > p {
+    display: none;
+  }
+  .Exist > button {
+    height: 2.5vh;
+    width: 5vh;
+    font-size: 2vh;
+  }
+}

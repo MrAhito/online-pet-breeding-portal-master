@@ -1,0 +1,53 @@
+.progress-wrap {
+  background-color: rgba(255, 255, 255, 0.65);
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 12;
+  display: flex;
+  margin: auto;
+}
+.progress-div {
+  height: fit-content;
+}
+.progress {
+  background-color: var(--primaryColor);
+  height: 0.45vh;
+  border-radius: 4vw;
+  transition: 1s ease;
+  transition-delay: 0.5s;
+}
+.CircleLoadDiv {
+  user-select: none;
+  position: absolute;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+.regDIvProg{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width:65vh;
+  height:35vh;
+  border-radius: 1.5vh;
+  background-color: var(--bodyColor);
+border:.25vh solid var(--borderColor);  
+}
+.regDIvProg > img{
+width: 15vh;
+}
+.regDIvProg > span{
+font-size: 3vh;
+}
+@media only screen and (max-width: 600px) {
+.CircleLoadDiv > div > img{
+width: 15vh;
+}
+}
